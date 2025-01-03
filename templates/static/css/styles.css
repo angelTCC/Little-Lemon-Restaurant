@@ -1,0 +1,57 @@
+/* Footer Styles */
+.footer {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Darker text color */
+    padding: 30px 0; /* Vertical padding for the footer */
+    border-top: 1px solid #e7e7e7; /* Subtle border on top */
+}
+
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer p, .footer ul {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer .social-links li a {
+    color: #007bff;
+}
+
+.footer .social-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Center text in the copyright section */
+.footer .text-center {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
