@@ -1,11 +1,17 @@
-const modal = document.getElementById("modal");
-const openModal = document.getElementById("openModal");
-const closeModal = document.getElementById("closeModal");
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var close = document.getElementsByClassName("close")[0];
 
-openModal.addEventListener("click", () => {
+btn.addEventListener("click", function() {
     modal.style.display = "block";
-});
+})
 
-closeModal.addEventListener("click", () => {
+close.addEventListener("click", function() {
     modal.style.display = "none";
-});
+})
+
+window.addEventListener("click", function(event) {
+    if (event.target == modal ){
+        modal.style.display = "none";
+    }
+})

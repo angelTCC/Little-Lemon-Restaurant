@@ -17,7 +17,14 @@
                         Category: {{ item.category }}</p>
                     </div>
                     <div class="col-2">
-                        <button typo="button" class="btn btn-info btn-sm">Info</button>
+                        <button type="button" class="btn btn-info btn-sm" id="myBtn">Info</button>
+                        <!-- the modal -->
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <p class="close">&times;</p>
+                                <p>{{ item.description }}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
@@ -27,16 +34,10 @@
         </div>
     </div>
 
-    <div class="row">
-        <button id="openModal">Open Modal</button>
 
-        <div id="modal" class="modal">
-          <div class="modal-content">
-            <p>Simple Modal</p>
-            <button id="closeModal">Close</button>
-          </div>
-        </div>
-    </div>
-</div>
+
+
+
+<script src="{% static 'script/menu.js' %}"></script>
 
 {% endblock %}
