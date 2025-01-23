@@ -1,0 +1,8 @@
+.about-presentation {
+    height: 500px; /* Fixed height for both columns */
+    border: 2px solid #ccc; /* Border to create the box */
+    border-radius: 20px;
+    padding: 15px; /* Padding inside the box */
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

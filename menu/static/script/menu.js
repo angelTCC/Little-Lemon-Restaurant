@@ -1,17 +1,24 @@
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var close = document.getElementsByClassName("close")[0];
+var modals = document.querySelectorAll("[id^='modal-']");
+var btns = document.querySelectorAll("[id^='btn-']");
+var closebtns = document.querySelectorAll(".close");
 
-btn.addEventListener("click", function() {
-    modal.style.display = "block";
-})
+btns.forEach(function(btn, index) {
+    btn.addEventListener("click", function() {
+        modals[index].style.display = "block";
+    });
+});
 
-close.addEventListener("click", function() {
-    modal.style.display = "none";
-})
+
+closebtns.forEach(function(closebtn, index) {
+    closebtn.addEventListener("click", function() {
+        modals[index].style.display = "none";
+    });
+});
 
 window.addEventListener("click", function(event) {
-    if (event.target == modal ){
-        modal.style.display = "none";
-    }
-})
+    modals.forEach(function(modal) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});

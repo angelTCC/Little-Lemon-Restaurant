@@ -3,11 +3,12 @@
 
 {% block content %}
 
-<div class="container">
-
-    <h3>Menu list</h3>
-
+<div class="container menu-presentation">
+    <h2>Menu</h2>
     <div class="row">
+        <div class="col-lg-4">
+            <img src="{% static 'img/pasta.jpg' %}" alt=" {{ item.title }}" width="100%">
+        </div>
         <div class="col-lg-8 menu-list">
             {% for item in menu %}
                 <div class="row menu-item">
@@ -17,9 +18,9 @@
                         Category: {{ item.category }}</p>
                     </div>
                     <div class="col-2">
-                        <button type="button" class="btn btn-info btn-sm" id="myBtn">Info</button>
+                        <button type="button" class="btn btn-info btn-sm" id="btn-{{ forloop.counter }}">Info</button>
                         <!-- the modal -->
-                        <div id="myModal" class="modal">
+                        <div id="modal-{{ forloop.counter }}" class="modal">
                             <div class="modal-content">
                                 <p class="close">&times;</p>
                                 <p>{{ item.description }}</p>
@@ -29,14 +30,8 @@
                 </div>
             {% endfor %}
         </div>
-        <div class="col-lg-4">
-            <img src="{% static 'img/pasta.jpg' %}" alt=" {{ item.title }}" width="100%">
-        </div>
     </div>
-
-
-
-
+</div>
 
 <script src="{% static 'script/menu.js' %}"></script>
 
