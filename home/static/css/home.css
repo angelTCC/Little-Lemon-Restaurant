@@ -1,27 +1,17 @@
 .home-presentation {
     display: flex; /* Flexbox for layout */
-    flex-direction: row; /* Default: Arrange columns side by side */
-    align-items: center; /* Center content vertically within the box */
-    justify-content: space-between; /* Add spacing between text and image */
     border: 2px solid #ccc; /* Box border */
     border-radius: 20px; /* Rounded corners */
     padding: 15px; /* Padding inside the box */
-    margin: 20px auto; /* Center the box horizontally */
-    max-width: 1200px; /* Limit the maximum width */
-    width: 90%; /* Responsive width */
+    margin: 40px auto; /* Center the box horizontally */
     box-sizing: border-box; /* Include padding and border in width/height */
-}
-
-.col-lg-8, .col-lg-4 {
-    flex: 1; /* Allow columns to grow/shrink as needed */
-    min-width: 300px; /* Minimum width for each column */
 }
 
 .col-lg-8 {
     display: flex; /* Flexbox for centering text */
     flex-direction: column; /* Stack text elements vertically */
     justify-content: center; /* Center text vertically within the column */
-    text-align: center; /* Center text horizontally */
+    text-align: left; /* Center text horizontally */
 }
 
 .col-lg-4 {
@@ -30,43 +20,29 @@
     justify-content: center; /* Center image horizontally */
 }
 
-.col-lg-4 img {
-    width: 100%; /* Fit the image to the container's width */
+.col-lg-4  img {
+    width: 90%; /* Fit the image to the container's width */
     height: auto; /* Maintain image's aspect ratio */
-    border-radius: 10px; /* Optional: Round image edges */
+    border-radius: 20px; /* Optional: Round image edges */
 }
-
-/* Responsive behavior for smaller screens */
-@media (max-width: 768px) {
-    .home-presentation {
-        flex-direction: column; /* Stack text and image vertically */
-        align-items: center; /* Center both columns horizontally */
-    }
-
-    .col-lg-8, .col-lg-4 {
-        width: 100%; /* Columns take full width */
-        text-align: center; /* Center text and image */
-    }
-
-    .col-lg-4 img {
-        width: 80%; /* Adjust image width for smaller screens */
-        height: auto; /* Maintain aspect ratio */
-    }
-}
-
 
 
 .home-item-promo {
-    height: 80px;
     border: 2px solid #ccc;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .home-item {
-    height: 400px;
+    padding: 20px;
     border: 2px solid #ccc;
     margin: 10px;
     border-radius: 20px;
+}
+
+.home-item img {
+    width: 100%;
+    border-radius: 20px;
+    justify-content: center;
 }
 
