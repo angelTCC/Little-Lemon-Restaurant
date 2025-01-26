@@ -6,10 +6,7 @@
 <div class="container menu-presentation">
     <h2>Menu</h2>
     <div class="row">
-        <div class="col-lg-4">
-            <img src="{% static 'img/pasta.jpg' %}" alt=" {{ item.title }}" width="100%">
-        </div>
-        <div class="col-lg-8 menu-list">
+        <div class="menu-list">
             {% for item in menu %}
                 <div class="row menu-item">
                     <h5>{{ item.title }}</h5>

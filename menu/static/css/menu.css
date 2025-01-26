@@ -1,5 +1,5 @@
 .menu-presentation {
-    height: 500px; /* Fixed height for both columns */
+    height: 600px; /* Fixed height for both columns */
     border: 2px solid #ccc; /* Border to create the box */
     border-radius: 20px;
     padding: 15px; /* Padding inside the box */
@@ -8,18 +8,18 @@
 }
 
 
+.menu-list {
+    height:500px;
+    direction: ltr;
+    overflow-y:scroll; 
+}
+
 /*menu list show*/
 .menu-item {
     border: 2px solid;
     border-radius: 10px;
     margin: 5px;
     padding: 5px;
-}
-
-.menu-list {
-    height:400px;
-    direction: ltr;
-    overflow-y:scroll;
 }
 
 

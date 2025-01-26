@@ -22,7 +22,7 @@ urlpatterns = [
     path('home/', include('home.urls')),
     path('about/', include('about.urls')),
     path('menu/', include('menu.urls')),
-    #path('orderonline/', include('about.urls')),
     path('reservations/', include('reservations.urls')),
+    #path('orderonline/', include('about.urls')),
     #path('servicies/', include('about.urls')),
 ]

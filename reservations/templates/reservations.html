@@ -4,14 +4,11 @@
 <div class="container">
     <div class="row">
         <h4>Reservations</h4>
-        first name 
-        last name 
-        guest name 
-        comment
+
         <div class="column">
             <form action="" method="post">
                 {% csrf_token %}
-                {{form.as_p}}
+                {{ form.as_p }}
                 <input type="submit" id="button">
             </form>
         </div>
