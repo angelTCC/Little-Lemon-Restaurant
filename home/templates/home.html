@@ -14,7 +14,7 @@
                 served with a modern twist.
             </p>
             <p style="margin-left: 50px;">
-                <button class="btn btn-primary">Reservation</button>
+                <a href="{% url 'reservations' %}" class="btn btn-primary">Reservation</a>
             </p>
         </div>
         <div class="col-lg-4">
@@ -25,13 +25,14 @@
 
 <div class="container">
     <div class="row home-item-promo" style="text-align: center;">
-                <h3>SPECIAL OFFER</h3>
-                <p>30% Off This Weekend<br>
-                <button class="btn btn-primary">Book now</button>
-            </p>
+        <h3>SPECIAL OFFER</h3>
+        <p>
+            30% Off This Weekend<br>
+            <a href="{% url 'reservations' %}" class="btn btn-primary">Book now</a>
+        </p>
     </div>
     <div class="row">
-        <div class="col-lg-6 home-item">
+        <div class="col home-item">
             <h5>Our new menu</h5>
             <p>
                 Our menu consists of 12-15 seasonal items based on Italian, Greek, and
@@ -39,14 +40,14 @@
             </p>
             <img src="{% static 'Grill.jpg' %}" >
         </div>
-        <div class="col-lg-6 home-item">
+        <div class="col home-item">
             <h5>Book a table</h5>
             <p>
                 Reserve your table for an Italian, Greek, and Turkish dining experience.
             </p>
             <img src="{% static 'salad.jpg' %}" >
         </div>
-        <div class="col-lg-6 home-item">
+        <div class="col home-item">
             <h5>Opening hours</h5>
             <p>
                 The Little Lemon Restaurant is open 7 days a week, except for public
