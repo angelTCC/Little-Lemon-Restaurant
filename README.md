@@ -1,4 +1,4 @@
 # Little Lemon Web Page
 
 ### First Part
-![sf](./static/part1.png)
+![sf](./static/par1.png)
